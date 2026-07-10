@@ -1,0 +1,59 @@
+body {
+    background: #f5f5f5;
+}
+
+.card {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .2);
+    border-radius: 12px;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.btn-sm {
+    margin-left: 5px;
+}
+
+body {
+    background: #f5f5f5;
+    transition: .4s;
+}
+
+.card {
+    transition: .4s;
+}
+
+.dark {
+    background: #121212;
+    color: white;
+}
+
+.dark .card {
+    background: #1f1f1f;
+    color: white;
+}
+
+.dark .card-header {
+    background: #000 !important;
+}
+
+.dark .list-group-item {
+    background: #2d2d2d;
+    color: white;
+}
+
+.dark .navbar {
+    background: #000 !important;
+}
+
+.dark input {
+    background: #2d2d2d;
+    color: white;
+    border: 1px solid gray;
+}
+
+.dark input::placeholder {
+    color: #ccc;
+}
