@@ -15,9 +15,8 @@ let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
 // Display tasks on page load
 displayTasks();
 
-// ======================
+
 // Add New Task
-// ======================
 todoForm.addEventListener("submit", function (e) {
 
     e.preventDefault();
@@ -42,9 +41,9 @@ todoForm.addEventListener("submit", function (e) {
 
 });
 
-// ======================
+
 // Display Tasks
-// ======================
+
 function displayTasks() {
 
     taskList.innerHTML = "";
@@ -132,9 +131,8 @@ function displayTasks() {
 
 }
 
-// ======================
 // Update Counters
-// ======================
+
 function updateCounter() {
 
     const completedTasks = tasks.filter(task => task.completed).length;
@@ -145,18 +143,18 @@ function updateCounter() {
 
 }
 
-// ======================
+
 // Save Tasks
-// ======================
+
 function saveTasks() {
 
     localStorage.setItem("tasks", JSON.stringify(tasks));
 
 }
 
-// ======================
+
 // Dark Mode
-// ======================
+
 
 // Load saved theme
 if (localStorage.getItem("theme") === "dark") {
