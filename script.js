@@ -1,15 +1,16 @@
 
-const todoForm = document.getElementById("todoForm");
-        const taskInput = document.getElementById("taskInput");
-        const taskList = document.getElementById("taskList");
+              const todoForm = document.getElementById("todoForm");
+             const taskInput = document.getElementById("taskInput");
+             const taskList = document.getElementById("taskList");
 
-        const total = document.getElementById("totalCount");
-        const completed = document.getElementById("completedCount");
-        const pending = document.getElementById("pendingCount");
+             const total = document.getElementById("totalCount");
+             const completed = document.getElementById("completedCount");
+           const pending = document.getElementById("pendingCount");
 
-        let tasks = JSON.parse(localStorage.getItem("tasks"));
+          let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
 
         displayTasks();
+  
 
         todoForm.addEventListener("submit", function (e) {
 
